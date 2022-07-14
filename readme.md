@@ -10,7 +10,7 @@ How to deploy:
 That's it, your fork is now deployed on Vercel (it should look like [vite-plugin-ssr-demo.vercel.app](https://vite-plugin-ssr-demo.vercel.app)). It's continuously deployed: if you commit and push a change to your fork, then Vercel automatically re-deploys your app.
 
 Integration points:
- - API Route: [api/render.js](api/render.js).
+ - API Route: [api/ssr.js](api/ssr.js).
  - Routing URLs to our API Route: [vercel.json#rewrites](vercel.json).
  - Build: the [package.json](package.json)'s scripts `package.json#scripts['vercel-build']` and `package.json#scripts.build`.
  - Development: the [package.json](package.json)'s script `package.json#scripts.dev`; we use Vite's development server for improved DX.
