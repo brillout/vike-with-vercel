@@ -3,7 +3,7 @@ See [vite-plugin-ssr.com/vercel](https://vite-plugin-ssr.com/vercel).
 How to deploy:
  - Fork this repository.
  - Log in to your [Vercel](https://vercel.com/) account (or create one).
- - Add your fork on the Vercel's dashbaord with following settings:
+ - Add your fork on Vercel's dashbaord with following settings:
    - `FRAMEWORK PRESET` should be `Vite`. (Vercel should automatically detect Vite; just make sure it's already set.)
    - Modify `Build and Output Settings` > `OUTPUT DIRECTORY` from `dist` to `dist/client`.
 
