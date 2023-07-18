@@ -1,6 +1,7 @@
 import { renderPage } from 'vite-plugin-ssr'
+import type { VercelRequest, VercelResponse } from '@vercel/node'
 
-export default async function handler(req, res) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   const { url } = req
   console.log('Request to url:', url)
   if (url === undefined) throw new Error('req.url is undefined')
