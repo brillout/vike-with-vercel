@@ -8,9 +8,11 @@
     "dev": "vite"
   },
   "dependencies": {
+    "@vercel/node": "^2.15.5",
     "@vitejs/plugin-vue": "^1.10.1",
     "@vue/compiler-sfc": "^3.2.24",
     "@vue/server-renderer": "^3.2.24",
+    "typescript": "^5.1.6",
     "vite": "^2.9.14",
     "vite-plugin-ssr": "0.4.5",
     "vue": "^3.2.24"
