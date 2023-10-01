@@ -11,7 +11,7 @@ export default async function handler(req, res) {
   console.log('Request to url:', url)
   if (url === undefined) throw new Error('req.url is undefined')
 
-  const pageContextInit = { url }
+  const pageContextInit = { urlOriginal: url }
   const pageContext = await renderPage(pageContextInit)
   const { httpResponse } = pageContext
   console.log('httpResponse', !!httpResponse)
