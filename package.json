@@ -1,21 +1,20 @@
 {
   "scripts": {
-    "// We need to define a `build` script, otherwise Vercel ignores the static files living at ./dist/client/": "",
+    "// We need to define a `build` script, otherwise Vercel ignores the static files living at `dist/client/`": "",
     "build": "echo 'I will never be called because the `vercel-build` script supersedes me'",
-    "// We need to run the entire build in `vercel-build` instead of `build` so that Vercel keeps the ./dist/ directory in production (Vercel discards all files generated during the `build` script.)": "",
+    "// We need to run the entire build in `vercel-build` instead of `build` so that Vercel keeps the `dist/` directory in production (Vercel discards all files generated during the `build` script.)": "",
     "vercel-build": "vite build",
     "// For increased dev speed we use the Vite dev server instead of `vercel dev`": "",
     "dev": "vite"
   },
   "dependencies": {
-    "@vercel/node": "^3.0.6",
-    "@vitejs/plugin-vue": "^4.3.4",
-    "@vue/compiler-sfc": "^3.3.4",
-    "@vue/server-renderer": "^3.3.4",
-    "typescript": "^5.2.2",
-    "vite": "^4.4.9",
-    "vike": "^0.4.142",
-    "vue": "^3.3.4"
-  },
-  "type": "module"
+    "@vercel/node": "^2.15.5",
+    "@vitejs/plugin-vue": "^1.10.1",
+    "@vue/compiler-sfc": "^3.2.24",
+    "@vue/server-renderer": "^3.2.24",
+    "typescript": "^5.1.6",
+    "vite": "^2.9.14",
+    "vite-plugin-ssr": "0.4.5",
+    "vue": "^3.2.24"
+  }
 }

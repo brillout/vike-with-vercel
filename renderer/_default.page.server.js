@@ -1,22 +1,22 @@
 import { renderToString } from '@vue/server-renderer'
-import { escapeInject, dangerouslySkipEscape } from 'vike/server'
+import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr'
 import { createApp } from './app'
 import logoUrl from './logo.svg'
 
 export { render }
 export { passToClient }
 
-// See https://vike.dev/data-fetching
+// See https://vite-plugin-ssr.com/data-fetching
 const passToClient = ['pageProps']
 
 async function render(pageContext) {
   const app = createApp(pageContext)
   const appHtml = await renderToString(app)
 
-  // See https://vike.dev/head
+  // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext
   const title = documentProps?.title || 'Vite SSR app'
-  const desc = documentProps?.description || 'App using Vite + Vike'
+  const desc = documentProps?.description || 'App using Vite + vite-plugin-ssr'
 
   return escapeInject`<!DOCTYPE html>
     <html lang="en">

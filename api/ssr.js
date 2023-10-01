@@ -1,4 +1,4 @@
-import { renderPage } from 'vike/server'
+import { renderPage } from 'vite-plugin-ssr'
 
 // We use JSDoc instead of TypeScript because Vercel seems buggy with /api/**/*.ts files
 
@@ -11,7 +11,7 @@ export default async function handler(req, res) {
   console.log('Request to url:', url)
   if (url === undefined) throw new Error('req.url is undefined')
 
-  const pageContextInit = { urlOriginal: url }
+  const pageContextInit = { url }
   const pageContext = await renderPage(pageContextInit)
   const { httpResponse } = pageContext
   console.log('httpResponse', !!httpResponse)

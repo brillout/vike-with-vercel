@@ -1,4 +1,4 @@
-See [vike.dev/vercel](https://vike.dev/vercel).
+See [vite-plugin-ssr.com/vercel](https://vite-plugin-ssr.com/vercel).
 
 How to deploy:
  1. Fork this repository.
@@ -7,7 +7,7 @@ How to deploy:
     - `FRAMEWORK PRESET` should be `Vite`. (Vercel should automatically detect Vite; just make sure it's already set.)
     - Modify `Build and Output Settings` > `OUTPUT DIRECTORY` from `dist` to `dist/client`.
 
-That's it, your fork is now deployed on Vercel (it should look like [vike-demo.vercel.app](https://vike-demo.vercel.app)). It's continuously deployed: if you commit and push a change to your fork, then Vercel automatically re-deploys your app.
+That's it, your fork is now deployed on Vercel (it should look like [vite-plugin-ssr-demo.vercel.app](https://vite-plugin-ssr-demo.vercel.app)). It's continuously deployed: if you commit and push a change to your fork, then Vercel automatically re-deploys your app.
 
 Integration points:
  - API Route: [api/ssr.js](api/ssr.js).
