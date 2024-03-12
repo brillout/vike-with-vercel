@@ -15,4 +15,4 @@ Integration points:
  - Build: the [package.json](package.json)'s scripts `package.json#scripts['vercel-build']` and `package.json#scripts.build`.
  - Development: the [package.json](package.json)'s script `package.json#scripts.dev`; we use Vite's development server for improved DX.
 
-> 👉 Vercel runs our API Route `api/ssr.js` as a serverless function, for more information see [Vercel Docs > Serverless Functions > Deploying](https://vercel.com/docs/concepts/functions/serverless-functions#deploying-serverless-functions).
+> 👉 Vercel runs your API Route `api/ssr.js` as a serverless function, for more information see [Vercel Docs > Serverless Functions > Deploying](https://vercel.com/docs/concepts/functions/serverless-functions#deploying-serverless-functions).
