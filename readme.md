@@ -12,7 +12,6 @@ That's it, your fork is now deployed on Vercel (it should look like [vike-demo.v
 Integration points:
  - API Route: [api/ssr.js](api/ssr.js).
  - Routing URLs to `api/ssr.js`: [vercel.json#rewrites](vercel.json).
- - Build: the [package.json](package.json)'s scripts `package.json#scripts['vercel-build']` and `package.json#scripts.build`.
  - Development: the [package.json](package.json)'s script `package.json#scripts.dev`; we use Vite's development server for improved DX.
 
 > 👉 Vercel runs your API Route `api/ssr.js` as a serverless function, for more information see [Vercel Docs > Serverless Functions > Deploying](https://vercel.com/docs/concepts/functions/serverless-functions#deploying-serverless-functions).
