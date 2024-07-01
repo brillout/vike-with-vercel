@@ -3,7 +3,7 @@ See [vike.dev/vercel](https://vike.dev/vercel).
 How to deploy:
  1. Fork this repository.
  1. Log in to your [Vercel](https://vercel.com/) account (or create one).
- 1. Add your fork on Vercel's dashbaord with following settings:
+ 1. Add your fork on Vercel's dashboard with following settings:
     - `FRAMEWORK PRESET` should be `Vite`. (Vercel should automatically detect Vite; just make sure it's already set.)
     - Modify `Build and Output Settings` > `OUTPUT DIRECTORY` from `dist` to `dist/client`.
 
