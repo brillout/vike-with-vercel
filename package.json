@@ -2,7 +2,9 @@
   "scripts": {
     "build": "vite build",
     "// For increased dev speed we use the Vite dev server instead of `vercel dev`": "",
-    "dev": "vite"
+    "dev": "vite",
+    "// See REAMDE.md": "",
+    "prod": "echo 'not needed'"
   },
   "dependencies": {
     "@vercel/node": "^3.0.6",
